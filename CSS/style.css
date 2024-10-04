@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding:  0;
+}
+nav{
+    width: 100vw;
+    height: 10vh;
+
+}
+@font-face {
+    font-family: mont;
+    src: url(../Media/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+:root{
+    --pri-Back:aliceblue;
+    --sec-Back:#02CFEC;
+    --sec2-Back:#1E9DFF;
+    --ter-Back:#00171f;
+
+}
+body{
+    background: var(--pri-Back);
+    font-family: mont;
+    position: relative;
+}
+nav{
+    position: fixed;
+    z-index: 3;
+    background: var(--pri-Back);
+}
+nav .navPlacer{
+    width:80% ;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    color: var(--ter-Back);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.logo img{
+  width: 130px;
+}
+.navReg{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: end;
+
+    width: 20%;
+}
+.navLinks{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navLinks div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px;
+
+}
+.navLinks div::after{
+    content: '';
+    background: var(--ter-Back);
+    width: 0%;
+    height: 3px;
+    border-radius: 20px;
+    position: absolute;
+    transition: .3s ease-in-out;
+    bottom: 0;
+}
+.navLinks div:hover::after{
+    width: 100%;
+    background: var(--sec-Back);
+
+}
+.navLinks div:hover p{
+    color: var(--sec-Back);
+
+}
+.navLinks div p{
+    font-weight: 500;
+    padding: 10px 10px ;
+    transition: .3s ease-in-out;
+
+    font-size: 15px;
+}
+.navReg button{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid var(--ter-Back);
+    background: var(--ter-Back);
+    color: var(--sec-Back);
+
+    transition: .3s ease-in-out;
+    font-family: mont;
+    border-radius: 40px;
+
+}
+.navReg button:hover{
+    background: none;
+
+    color: var(--ter-Back);
+}
+#Doogo{
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    top: 10vh;
+
+    overflow: hidden;
+}
+.DoogoHero{
+    background: url(../Media/transport-logistics-concept.jpg)no-repeat center/cover fixed;
+    height: 90%;
+    margin:  0 auto;
+    width: 95vw;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+
+}
+.DoogoMiniHero{
+    position: absolute;
+    width: 500px;
+    background: var(--ter-Back);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+    right: 2.5%;
+    bottom: 10%; 
+    outline: 20px solid var(--pri-Back);
+    border-radius: 20px;
+
+}
+.DoogoMiniHero::after{
+width: 20px;
+height: 20px;
+background: transparent;
+content: '';
+position: absolute;
+z-index: 2;
+border-radius: 0px 0 20px 0;
+bottom: 0;
+box-shadow:  6px 6px 0 6px var(--pri-Back);
+left: -40px;
+
+}
+.DoogoMiniHero::before{
+width: 20px;
+height: 20px;
+background: transparent;
+content: '';
+position: absolute;
+z-index: 2;
+border-radius: 0px 0 20px 0;
+top: -40px;
+box-shadow:  6px 6px 0 6px var(--pri-Back);
+right: 0px;
+
+}
+.DoogoHeroCont{
+    left: 8%;
+    position: absolute;
+    
+}
+.DoogoHeroCont p{
+    color: var(--pri-Back);
+    padding-bottom: 10px;
+}
+.DoogoHeroCont h1{
+    color: var(--pri-Back);
+    font-size: 55px;
+}
+.heroBtns{
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.heroBtns .toDestBtn{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background: var(--sec2-Back);
+    border-radius: 40px;
+    font-family: mont;
+    color: aliceblue;
+    font-weight: 500;
+}
+.heroBtns .toDownBtn{
+    margin-left: 10px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background: var(--pri-Back);
+    height: 40px;
+    color: var(--sec2-Back);
+    font-size: 16px;
+}
+.DoogoMiniHeroPlacer{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 90%;
+
+}
+.DoogoMiniHeroPlacer h4{
+    text-align: center;
+    color: aliceblue;
+}
+.countriesWrap{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.countryCard{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+.countryCard img{
+    width:50%;
+
+}
+.countryCard{
+    color: aliceblue;
+    
+}
+.EthiopiaImage{
+    width: 70% !important;
+}
+.Brands{
+    width: 100vw;
+    overflow: hidden;
+    height: 20vh;
+}
+.brandsPlacer{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:  0 auto;
+}
+.brandsPlacer img{
+
+    width: 90px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    mix-blend-mode: darken;
+    opacity: .3;
+}
