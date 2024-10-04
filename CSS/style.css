@@ -22,7 +22,10 @@ body{
     background: var(--pri-Back);
     font-family: mont;
     position: relative;
+    width: 100vw;
+    overflow-x: hidden;
 }
+
 nav{
     position: fixed;
     z-index: 3;
@@ -125,7 +128,7 @@ nav .navPlacer{
     overflow: hidden;
 }
 .DoogoHero{
-    background: url(../Media/transport-logistics-concept.jpg)no-repeat center/cover fixed;
+    background: url(../Media/truck-with-white-trailer-that-says-scania-side.jpg)no-repeat center/cover fixed;
     height: 90%;
     margin:  0 auto;
     width: 95vw;
@@ -275,4 +278,150 @@ right: 0px;
     object-fit: contain;
     mix-blend-mode: darken;
     opacity: .3;
+}
+#Work{
+    width:100vw ;
+    min-height: 70vh;
+    padding-bottom: 50px;
+}
+.workPlacer{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.workPlacer h2
+{
+    margin:  50px 0 0 0;
+    color: var(--ter-Back);
+    width: 60%;
+    text-align: center;
+    font-size: 40px;
+}
+.workPlacer .introP
+{
+    text-align: center;
+    width: 70%;
+    font-size: 15px;
+    margin:  20px 0 30px 0;
+    
+}
+.procedureWrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.procedureCard{
+    width: 24%;
+    border-radius: 10px;
+    height: 400px;
+    color: aliceblue;
+    background: rgb(233, 233, 233);
+    background: var(--sec2-Back);
+}
+.procedureCardFront{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.procedureCardFront .procedureCardFrontIntro{
+    height: 10%;
+    width: 95%;
+    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.procedureCardFront .cardImageWrap{
+    width: 80%;
+    margin:  0 auto;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardImageWrap img {
+    width: 70%;
+    aspect-ratio: 3/4;
+    object-fit: contain;
+
+}
+.fliperToBack{
+    position: absolute;
+    /* position: relative; */
+    width: 50px;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    outline: 8px solid var(--pri-Back);
+    background: var(--ter-Back);
+}
+.fliperToBack:hover{
+    width: 60px;
+    height: 60px;
+}
+.fliperToBack i{
+    transition: .3s ease-in-out;
+    color: var(--sec-Back);
+}
+.fliperToBack:hover i{
+    transform: rotate(-180deg);
+  
+}
+.fliperToBack::after{
+    width: 16px;
+    height: 16px;
+    background: var(--sec2-Back);
+    content: '';
+    border-radius: 0 0 0 50%;
+    position: absolute;
+    top: -24px;
+    box-shadow: -5px 5px 0 var(--pri-Back);
+    left: 0;
+}
+.fliperToBack::before{
+    width: 16px;
+    height: 16px;
+    background: var(--sec2-Back);
+    content: '';
+    border-radius: 0 0 0 50%;
+    position: absolute;
+    right: -24px;
+    box-shadow: -5px 5px 0 var(--pri-Back);
+    bottom: 0;
+}
+.bottomCardCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 90%;
+    margin:  0 auto;
+    height: 30%;
+}
+.bottomCardCont p{
+    font-size: 12px;
+    width: 80%;
+    text-align: end;
+    margin: none !important;
+}
+.bottomCardCont h3{
+    margin-bottom: 0;
+    margin-bottom: 10px;
 }
