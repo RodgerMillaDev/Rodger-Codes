@@ -490,7 +490,7 @@ right: 0px;
     display: flex;
     color: var(--ter-Back);
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     text-align: center;
     height: 100px;
 }
