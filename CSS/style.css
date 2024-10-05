@@ -575,7 +575,7 @@ right: 0px;
 
 }
 .driverLeft h2{
-    color: var(--sec2-Back);
+    color: var(--ter-Back);
      margin: 50px 0 10px 0;
     font-size: 50px;
 
@@ -599,18 +599,237 @@ height: 100%;
     width: 250px;
     height: 270px;
     border-radius: 20px;
-    background: red;
     display: flex;
     flex-direction: column;
     align-items: start;
     
 }
 .iconWrap{
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
 margin: 30px 0 10px 20px;
 background: green;
 display: flex;
 align-items: center;
+font-size: 25px;
+border-radius: 15px;
 justify-content: center;
 }
+.driverRight h3{
+    margin: 5px 0 10px 20px;
+    color: var(--ter-Back);
+
+}
+.driverRight p{
+    font-size: 13px;
+    margin: 5px 0 5px 20px;
+    color: rgba(20, 20, 20, 0.692);
+}
+.driverRight button{
+    background: var(--ter-Back);
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 40px;
+    border:  none;
+    color: var(--sec-Back);
+    font-family: mont;
+    cursor: pointer;
+    font-size: 12px;
+}
+.iconWrapUser{
+    background: rgb(22,93,245);
+    color: aliceblue;
+}
+.iconWrapDriver{
+    background:rgb(42,187,162);
+    color: aliceblue;
+}
+.iconWrapJob{
+    background:rgb(255,87,51);
+    color: aliceblue;
+}
+
+#Summary{
+    width: 100vw;
+    position: relative;
+    height: 70vh;
+}
+canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    z-index: 2;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+  #Summary img{
+    filter: drop-shadow(1px 1px 4px rgba(17, 207, 255, 0.333));
+
+  }
+  #img1{
+     left: 30%;
+     width: 50px;
+     height: 50px;
+     object-fit: cover;
+     border-radius: 50%;
+     position: absolute;
+  }
+  #img2{
+     left: 5%;
+     width: 50px;
+     height: 50px;
+     object-fit: cover;
+     border-radius: 50%;
+     position: absolute;
+     top: 20%;
+  }
+  #img3{
+     left: 25%;
+     width: 50px;
+     height: 50px;
+     object-fit: cover;
+     border-radius: 50%;
+     position: absolute;
+     top: 30%;
+  }
+  #img4{
+     left: 15%;
+     width: 50px;
+     height: 50px;
+     object-fit: cover;
+     border-radius: 50%;
+     position: absolute;
+     top: 60%;
+  }
+  #img5{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+     right: 30%;
+     bottom: 10%;
+  }
+  #img6{
+     right: 10%;
+     width: 50px;
+     height: 50px;
+     object-fit: cover;
+     border-radius: 50%;
+     position: absolute;
+     bottom: 20%;
+  }
+  #img7{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+     right: 25%;
+     bottom: 75%;
+  }
+  #img8{
+     right: 5%;
+     width: 50px;
+     height: 50px;
+     object-fit: cover;
+     border-radius: 50%;
+     position: absolute;
+     bottom: 60%;
+  }
+  .SumContent{
+    width: 40%;
+    margin:  0 auto;
+    position: absolute;
+    flex-direction: column;
+    left: 50%;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    
+  }
+  .SumContent img{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.233)) !important;
+    width: 250px ;
+    object-fit: contain !important;
+  }
+  .sumData{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    height: 100px;}
+    .sumDataCard{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+  .sumDataCard h3{
+    margin: 10px;
+    color: var(--sec2-Back);
+  }
+  .sumDataCard p{
+    color: var(--ter-Back);
+  }
