@@ -18,6 +18,33 @@ nav{
     --ter-Back:#00171f;
 
 }
+
+html{
+    scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00000000; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00000000; 
+  }
+
+
+
 body{
     background: var(--pri-Back);
     font-family: mont;
@@ -67,7 +94,7 @@ nav .navPlacer{
     width: 20%;
 }
 .navLinks{
-    width: 35%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
