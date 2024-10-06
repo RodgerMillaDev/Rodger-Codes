@@ -80,3 +80,10 @@ particlesJS("particles-js", {
   requestAnimationFrame(update);
   
   
+  function fliperToBack(e){
+    e.style.transform='rotateY(180deg)'
+  }
+  function fliperToFront(e){
+    e.style.transform='rotateY(0deg)'
+    console.log("flipped")
+  }
