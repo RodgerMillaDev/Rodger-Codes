@@ -287,7 +287,7 @@ right: 0px;
 }
 #Work{
     width:100vw ;
-    min-height: 70vh;
+    min-height: 90vh;
     padding-bottom: 50px;
 }
 .workPlacer{
@@ -311,7 +311,7 @@ right: 0px;
     text-align: center;
     width: 70%;
     font-size: 15px;
-    margin:  20px 0 30px 0;
+    margin:  30px 0 50px 0;
     
 }
 .procedureWrap{
@@ -555,7 +555,7 @@ right: 0px;
     width: 90vw;
     margin:  100px auto;
     border-radius: 20px;
-    height: 80vh;
+    height: 85vh;
     background: rgba(0, 0, 0, 0.034);
 
 }
@@ -650,7 +650,10 @@ justify-content: center;
     background:rgb(255,87,51);
     color: aliceblue;
 }
-
+.iconWrapCare{
+    background:rgb(214, 90, 127);
+    color: aliceblue; 
+}
 #Summary{
     width: 100vw;
     position: relative;
@@ -831,5 +834,103 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--sec2-Back);
   }
   .sumDataCard p{
+    color: var(--ter-Back);
+  }
+  footer{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerPlacer{
+    height: 70%;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.034);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footerLogo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerLogo img{
+    width: 150px;
+  }
+  .footerLinks{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerLinks p{
+    font-size: 15px;
+    color: var(--ter-Back);
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0px 30px;
+    transition: .2s ease-in-out;
+  }
+  .footerLinks p:hover{
+    color: var(--sec2-Back);
+    font-size: 16px;
+  }
+  .footerFInal{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footerNews{
+    margin-left: 30px;
+    width: 350px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: green;
+    background: aliceblue;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.158);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 209, 236, 0.037);
+    
+  }
+  .footerNews input{
+    width: 250px;
+    border: none;
+    height: 40px;
+    padding: 0 0 0 5px;
+    background:  none;
+
+  }
+  .footerNews input:focus{
+    outline: none;
+    font-family: mont;
+    font-size: 13px;
+  }
+  .footerNews button{
+    width:85px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: mont;
+    background: var(--ter-Back);
+    color: var(--sec-Back);
+    font-size: 12px;
+    border: none;
+    
+  }
+  .footerCopy{
+    margin-right:30px ;
+    font-size: 15px;
     color: var(--ter-Back);
   }
