@@ -85,5 +85,4 @@ particlesJS("particles-js", {
   }
   function fliperToFront(e){
     e.style.transform='rotateY(0deg)'
-    console.log("flipped")
   }
