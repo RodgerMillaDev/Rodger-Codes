@@ -21,8 +21,10 @@ nav{
 .proLoader{
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
+    top: 0;
     background: aliceblue;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,10 +33,10 @@ nav{
 .fonLinks{
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     background: aliceblue;
     display: flex;
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     right: -102%;
     align-items: center;
     justify-content: center;

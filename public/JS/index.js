@@ -2,10 +2,10 @@ window.addEventListener("load",()=>{
   document.getElementById("preLoader").style.display="none"
 })
 function openFonNav(){
-  document.getElementById("fonLinks").style.left="0"
+  document.getElementById("fonLinks").style.right="0"
 }
 function fonLinksCancel(){
-  document.getElementById("fonLinks").style.left="-101%"
+  document.getElementById("fonLinks").style.right="-101%"
 }
 
 particlesJS("particles-js", {
