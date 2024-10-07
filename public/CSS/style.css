@@ -18,7 +18,74 @@ nav{
     --ter-Back:#00171f;
 
 }
+.proLoader{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.fonLinks{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: aliceblue;
+    display: flex;
+    transition: .3s ease-in-out;
+    right: -102%;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.fonLinksWrap{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.fonLinksWrap p{
+    margin: 15px;
+    font-weight: 600;
+    color: var(--ter-Back);
+    
+}
 
+.fonLinksCancel{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    color: var(--sec-Back);
+
+    background: var(--ter-Back);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    margin: 30px;
+}
+.fonLinksCancel i{
+    font-size: 24px;
+}
+.fonLinksCancel:hover{
+    transform: rotate(180deg);
+}
+.proLoader img{
+    width: 70px;
+    animation: preLoader 2s ease 1;
+    animation-name: preLoader;
+}
+@keyframes preLoader {
+    From{
+        opacity: .0;
+    }to{
+        opacity: 1;
+    }
+    
+}
 html{
     scroll-behavior: smooth;
 }
@@ -94,7 +161,7 @@ nav .navPlacer{
     width: 20%;
 }
 .navLinks{
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
