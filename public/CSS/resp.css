@@ -37,7 +37,7 @@
         display: none;
     }
     .DoogoHero{
-        background: url(../Media/truck-with-white-trailer-that-says-scania-side.jpg)no-repeat center/cover fixed;
+        background: url(../Media/compressed/truck-with-white-trailer-that-says-scania-side.jpg)no-repeat center/cover fixed;
         height: 90%;
         margin:  0 auto;
         width: 95vw;
@@ -101,7 +101,7 @@
         
     }
     .DoogoHero{
-        background: url(../Media/truck-with-white-trailer-that-says-scania-side.jpg)no-repeat center/cover ;
+        background: url(../Media/compressed/truck-with-white-trailer-that-says-scania-side.jpg)no-repeat center/cover ;
         height: 90%;
         margin:  0 auto;
         width: 95vw;
