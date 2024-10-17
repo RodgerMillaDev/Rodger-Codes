@@ -233,7 +233,7 @@ nav .navPlacer{
     overflow: hidden;
 }
 .DoogoHero{
-    background: url(../Media/compressed/truck-with-white-trailer-that-says-scania-side.jpg)no-repeat center/cover fixed;
+    background: url(../Media/compressed/truck-with-white-trailer-that-says-scania-side.webp)no-repeat center/cover fixed;
     height: 90%;
     margin:  0 auto;
     width: 95vw;
@@ -541,7 +541,7 @@ position: absolute;
     object-fit: contain;
 
 }
-.fliperToBack{
+.procedureCardCont{
     position: absolute;
     /* position: relative; */
     width: 50px;
